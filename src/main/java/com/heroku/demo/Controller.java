@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author sosagasdfa
+ * @author sosagasdfaasdf
  */
 @RestController
 @RequestMapping("/api/v1.0")
