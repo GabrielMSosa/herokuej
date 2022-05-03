@@ -31,6 +31,7 @@
 
 	<build>
 		<plugins>
+
                     <plugin>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-maven-plugin</artifactId>
@@ -46,7 +47,25 @@
         </execution>
     </executions>
 </plugin>
-		</plugins>
+                    <plugin>
+    
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.1</version>
+    <configuration>
+        <source>1.7</source>
+        <target>1.7</target>
+  <environmentVariables>
+                                <JAVA_TOOL_OPTIONS>-XX:MaxDirectMemorySize=64M</JAVA_TOOL_OPTIONS>
+                                <JAVA_OPTS>-XX:MaxDirectMemorySize=64M</JAVA_OPTS>
+                            </environmentVariables>
+                            <systemPropertyVariables>
+                                <JAVA_TOOL_OPTIONS>-XX:MaxDirectMemorySize=64M</JAVA_TOOL_OPTIONS>
+                                <JAVA_OPTS>-XX:MaxDirectMemorySize=64M</JAVA_OPTS>
+                            </systemPropertyVariables>
+
+    </configuration>
+</plugin>		</plugins>
 	</build>
 
 </project>
