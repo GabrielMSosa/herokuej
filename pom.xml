@@ -32,21 +32,7 @@
 	<build>
 		<plugins>
 
-                    <plugin>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-maven-plugin</artifactId>
-    <configuration>
-        <mainClass>com.places.Main</mainClass>
-    </configuration>
-
-    <executions>
-        <execution>
-            <goals>
-                <goal>repackage</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
+                    
                     <plugin>
     
     <groupId>org.apache.maven.plugins</groupId>
@@ -55,6 +41,13 @@
     <configuration>
         <source>1.7</source>
         <target>1.7</target>
+          <executions>
+        <execution>
+            <goals>
+                <goal>repackage</goal>
+            </goals>
+        </execution>
+          </executions>
   <environmentVariables>
                                 <JAVA_TOOL_OPTIONS>-XX:MaxDirectMemorySize=64M</JAVA_TOOL_OPTIONS>
                                 <JAVA_OPTS>-XX:MaxDirectMemorySize=64M</JAVA_OPTS>
